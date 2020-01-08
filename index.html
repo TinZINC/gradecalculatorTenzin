@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tenzin's Grade Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <h1> Grade Calculator </h1>
+    <body>
+    <table id="assignmentTable" border = "1" cellspacing = "1" cellpadding = "5">
+        <tr id = "labels" >
+            <td> Works </td>
+            <td> Grades </td>
+            <td> Percentage Weighted</td>
+        </tr>
+
+        <tr id = "1">
+            <td>Homework </td>
+            <td><input id="hwScores" placeholder="Enter Grade(s)" value="80,90,100"></td>
+            <td><input id="hwWeight" placeholder="Enter Weight" value="20"></td>
+        </tr>
+
+        <tr id = "2">
+            <td>Quizes </td>
+            <td><input id="qScores" placeholder="Enter Grade(s)" value="80,90,100"></td>
+            <td><input id="qWeight" placeholder="Enter Weight" value="20"></td>
+        </tr>
+
+        <tr id = "3">
+            <td>Tests </td>
+            <td><input id="tScores" placeholder="Enter Grade(s)" value="80,90,100"></td>
+            <td><input id="tWeight" placeholder="Enter Weight" value="20"></td>
+        </tr>
+
+        <tr id = "4">
+            <td>Participation </td>
+            <td><input id="paScores" placeholder="Enter Grade(s)" value="80,90,100"></td>
+            <td><input id="paWeight" placeholder="Enter Weight" value="10"></td>
+        </tr>
+
+        <tr id = "5">
+            <td>Projects </td>
+            <td><input id="prScores" placeholder="Enter Grade(s)" value="80,90,100"></td>
+            <td><input id="prWeight" placeholder="Enter Weight" value="20"></td>
+        </tr>
+
+    </table>
+
+    <table id = "gradeTable" border = "1" cellspacing = "1" cellpadding = "5">
+            <tr>
+                <td> The Grade You Want</td>
+                <td> Weight of the Final</td>
+            </tr>
+
+            <tr>
+                <td><input id="gradeWanted" placeholder="Enter Grade Wanted" value="100"></td>
+                <td><input id="weightOfFinal" placeholder="Enter Weight" value="10"></td>
+            </tr>
+    </table>
+
+
+    <div style="text-align: center;">
+    <button onclick="calculateGradeNeeded()"> CALCULATE YOUR GRADEEE </button>
+    <button onclick="finalExamGrade()"> CALCULATE THE FINAL EXAM GRADE NEEDED </button>
+    <button onclick="reset()"> If reset is needed for numbers </button>
+    <div id="calculatedAnswer"> </div>
+    <div id="finalExamGradee"> </div>
+    <div style="text-align: center;"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+h1 {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    position: center;
+    max-width: 200px;
+    margin: auto;
+
+}
+
+#button1, #button2 {
+    color: black;
+    cursor: pointer;
+    margin: auto;
+}
+
+#td, #tr {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#calculatedAnswer, #finalExamGradee {
+    text-align: center;
+
+}
